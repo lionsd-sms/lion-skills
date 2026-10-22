@@ -8,6 +8,7 @@ lion-skills
  ├─ lion/                             Claude Code 플러그인 (스킬 28 · 에이전트 5 · 새 대화 훅)
  ├─ codex/                            Codex 용 에이전트 5 · 새 대화 훅
  ├─ global-rules/                     전역 규칙 (CLAUDE.md · AGENTS.md, 내용 같음)
+ ├─ LICENSE                           MIT
  └─ README.md                         이 파일
 ```
 
@@ -57,3 +58,13 @@ claude plugin update lion@lion-skills
 - Claude Code: 터미널에서 `claude plugin uninstall lion@lion-skills`, 그다음 `claude plugin marketplace remove lion-skills`. settings.json 에 넣은 읽기 허용 줄도 지운다.
 - Codex: 위에서 복사한 스킬 28개 폴더, 에이전트 5개 파일, hooks.json 의 lion-mode 항목을 지운다.
 - 전역 규칙: 붙여 넣은 부분을 지운다.
+
+## 출처와 이용조건
+
+이 저장소는 MIT 다([LICENSE](LICENSE)). 일부 지침은 아래 자료의 생각과 내용을 바탕으로 우리 말로 다시 썼다. 각 자료의 원래 저작권 문구는 그 지침이 든 스킬의 `references/LICENSES.md` 에 그대로 있다.
+
+- [agent-skills](https://github.com/addyosmani/agent-skills) · Addy Osmani · MIT
+- [pstack](https://github.com/cursor/plugins/tree/main/pstack) · Lauren Tan · MIT
+- [skills](https://github.com/mattpocock/skills) · Matt Pocock · MIT
+- [ponytail](https://github.com/DietrichGebert/ponytail) · DietrichGebert · MIT
+- [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) · Next Level Builder · MIT (그 안의 UI 스타일 자료 일부는 Apache License 2.0)
