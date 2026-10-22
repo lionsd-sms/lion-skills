@@ -1,0 +1,8 @@
+{
+  "name": "lion",
+  "version": "2026.10.222252",
+  "description": "lion 스킬 28개와 역할 에이전트 5개. 새 대화마다 길잡이(lion-mode)가 요청에 맞는 스킬을 골라 연다.",
+  "author": {
+    "name": "lionsd"
+  }
+}

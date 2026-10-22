@@ -1,0 +1,14 @@
+{
+  "name": "lion-skills",
+  "owner": {
+    "name": "lionsd"
+  },
+  "plugins": [
+    {
+      "name": "lion",
+      "source": "./lion",
+      "version": "2026.10.222252",
+      "description": "lion 스킬 묶음"
+    }
+  ]
+}
