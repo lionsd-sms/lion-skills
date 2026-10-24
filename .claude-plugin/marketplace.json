@@ -6,8 +6,8 @@
   "plugins": [
     {
       "name": "lion",
-      "source": "./lion",
-      "version": "2026.10.222317",
+      "source": "./",
+      "version": "2026.10.241011",
       "description": "lion 스킬 묶음"
     }
   ]

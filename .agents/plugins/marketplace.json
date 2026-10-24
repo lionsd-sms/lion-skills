@@ -1,0 +1,20 @@
+{
+  "name": "lion-skills",
+  "interface": {
+    "displayName": "lion skills"
+  },
+  "plugins": [
+    {
+      "name": "lion",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
