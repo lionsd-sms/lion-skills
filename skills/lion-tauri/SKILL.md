@@ -1,8 +1,7 @@
 ---
 name: lion-tauri
 description: >-
-  Tauri 2 데스크톱 앱(src-tauri)의 앱 명령과 IPC 권한(capability), CSP·웹뷰 설정, 플러그인과 resources, 자동 업데이트(updater), Windows 설치판(NSIS)·WebView2·관리자 권한 실행, Tauri 판 올리기를 쓰는 판의 설정과 소스로 확인하며 만들고 고친다. 이런 요청에 쓴다: 'Tauri capability 권한 실제 쓰는 것만 남겨줘', 'updater 붙여서 자동 업데이트 되게 해줘', '설치판을 Program Files 에 깔리는 perMachine 으로 바꿔줘', '화면에서 폴더 경로 받아서 지우는 invoke 명령 만들어줘', '인터넷 안 되는 현장 PC 에도 깔리게 WebView2 넣어줘', 'tauri 2.11 로 올려줘'. 범위 밖: Tauri 설정과 무관한 화면·기능 추가, 이미 난 오류의 원인 찾기.
-disable-model-invocation: true
+  Tauri 2 앱(src-tauri)의 앱 명령(invoke)·IPC 권한(capability)·CSP·플러그인·자동 업데이트·설치판(NSIS, perMachine)·WebView2·관리자 권한 실행·판 올리기를 고친다. 이럴 때 쓴다: Tauri 앱의 권한이 막히거나 업데이트·설치판·오프라인 설치·관리자 권한·판 올리기를 바꿀 때. 범위 밖: Tauri 와 무관한 화면, 오류 원인, 빌드·배포.
 ---
 
 # Tauri 2 앱
@@ -11,7 +10,7 @@ Tauri 2 앱의 앱 명령·권한·웹뷰 설정·플러그인·업데이트·Wi
 
 ## 함께 여는 스킬
 
-이 스킬을 열면 아래 조건에 맞는 스킬을 일을 시작하기 전에 바로 함께 연다.
+이 스킬을 열었으면 파일을 읽거나 고치기 전에, 아래 조건에 맞는 스킬을 Skill 도구로 연다(Codex 는 그 스킬의 SKILL.md 를 읽는다). 이미 열려 있으면 건너뛴다.
 
 - 코드를 고치거나 패키지를 더하거나 판을 올릴 때: `lion-dev-checks`
 - 화면·자료·API 같은 앱 기능 자체를 만들거나, Rust·TypeScript 코드 배치와 게이트 명령이 걸릴 때: `lion-app-development`

@@ -1,7 +1,7 @@
 {
   "name": "lion",
-  "version": "2026.10.241039",
-  "description": "lion 스킬 28개와 역할 에이전트 5개. 새 대화마다 길잡이(lion-mode)가 요청에 맞는 스킬을 골라 연다.",
+  "version": "2026.10.270729",
+  "description": "lion 스킬 27개와 역할 에이전트 5개. 스킬마다 설명 문구로 요청에 맞는 스킬이 스스로 열린다.",
   "author": {
     "name": "lionsd"
   },
@@ -9,10 +9,9 @@
   "repository": "https://github.com/lionsd-sms/lion-skills",
   "license": "MIT",
   "skills": "./skills/",
-  "hooks": "./hooks/codex-hooks.json",
   "interface": {
     "displayName": "lion",
-    "shortDescription": "요청에 맞는 작업 스킬을 골라 여는 한국어 스킬 묶음",
+    "shortDescription": "요청에 맞는 작업 스킬이 스스로 열리는 한국어 스킬 묶음",
     "developerName": "lionsd",
     "category": "Productivity",
     "websiteURL": "https://github.com/lionsd-sms/lion-skills"
