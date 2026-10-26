@@ -1,6 +1,6 @@
 {
   "name": "lion",
-  "version": "2026.10.270729",
+  "version": "2026.10.270857",
   "description": "lion 스킬 27개와 역할 에이전트 5개. 스킬마다 설명 문구로 요청에 맞는 스킬이 스스로 열린다.",
   "author": {
     "name": "lionsd"
