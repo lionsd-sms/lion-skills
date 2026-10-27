@@ -1,6 +1,6 @@
 # lion 스킬
 
-Claude Code 와 Codex 에 설치해 쓰는 한국어 작업 스킬 27개입니다.
+Claude Code 와 Codex 에 설치해 쓰는 한국어 작업 스킬 28개입니다.
 
 평소 하던 말로 요청하면 맞는 스킬이 열립니다. "버튼 하나 추가해줘" 라고 하면 앱 개발 스킬이, "저장 누르면 에러 떠" 라고 하면 디버깅 스킬이 열립니다. 스킬마다 어떤 일에 쓰는지 적힌 설명이 있어 AI 가 요청을 보고 맞는 스킬을 스스로 고르므로, 스킬 이름을 외워 두실 필요는 없습니다.
 
@@ -32,6 +32,8 @@ codex plugin marketplace add lionsd-sms/lion-skills
 codex plugin add lion@lion-skills
 ```
 
+설치가 끝나면 새 대화에 `lion 설정해줘` 를 입력해 주세요. `lion-setup` 이 이 PC 에서 쓸 수 있는 모델을 찾고, 쓸 수 있는 Claude 모델과 비용 기준(아껴 · 보통 · 넉넉히)을 객관식으로 여쭌 뒤 모델 시트를 씁니다. 시트는 Claude 는 `~/.claude/rules/lion-models.md`, Codex 는 `~/.codex/AGENTS.md` 의 lion-models 절에 들어가 대화마다 실리고, 큰 일을 서브 에이전트에 나눠 맡길 때 이 시트대로 모델과 노력을 고릅니다. Codex 쪽은 넣기 전에 넣을 내용을 보여 드립니다. `/lion-setup` 을 쳐도 됩니다. 요금제를 바꾸거나 새 모델이 나오면 한 번 더 하시면 됩니다. AI 에게 설치를 맡기셨다면 AI 가 이 단계까지 이어서 합니다.
+
 설치가 잘 됐는지는 새 대화에 `PDF 두 개 합쳐줘` 를 입력해 보면 알 수 있습니다. `lion-pdf` 가 열리면 제대로 설치된 것입니다.
 
 ## 동작 방식
@@ -62,10 +64,10 @@ lion-review          reviewer 가 근거를 달아 지적합니다 → 한 번 �
 
 나눠 맡길 때 쓰는 역할 에이전트는 다섯입니다. `scoper` 가 기획, `planner` 가 계획, `executor` 가 실행, `reviewer` 가 검수를 맡습니다. 긴 로그나 외부 문서를 읽고 요약하는 일은 `researcher` 가 합니다.
 
-## 스킬 27개
+## 스킬 28개
 
 ```
-██████ 6  일하는 방식
+███████ 7  일하는 방식
 ███████ 7  개발
 ███████ 7  문서와 파일
 ████    4  디자인과 영상
@@ -81,6 +83,7 @@ lion-review          reviewer 가 근거를 달아 지적합니다 → 한 번 �
 | `lion-review` | 끝난 작업을 한 번 검수하고 고친 뒤에 한 번 더 봅니다 | "검토해줘", "다 만든 거 요구한 대로 됐는지 확인해줘" |
 | `lion-project-rules` | 프로젝트 규칙 문서(AGENTS.md)를 만들고 정한 것을 적어 다음 세션에 넘깁니다 | "새 프로젝트인데 규칙부터 잡아줘", "어디까지 했지? 이어서 해줘" |
 | `lion-skill-update` | 스킬을 만들고 고친 뒤 제대로 열리는지 시험합니다 | "이걸 스킬로 만들어줘", "스킬이 자꾸 안 불려, 설명 고쳐줘" |
+| `lion-setup` | 이 PC 에서 쓸 모델과 비용 기준을 여쭤 모델 시트를 씁니다. 설치한 뒤 한 번 합니다 | "lion 설정해줘", "요금제 바꿨어, 모델 다시 잡아줘" |
 | `lion-bro` | 이해하기 어려웠던 답을 결론 한 문장과 예로 다시 설명합니다 | "브로", "뭔 소리야?" |
 
 개발
@@ -156,7 +159,7 @@ lion-skills/
 ├─ .claude-plugin/        Claude 설정 (plugin.json, marketplace.json)
 ├─ .codex-plugin/         Codex 설정 (plugin.json)
 ├─ .agents/plugins/       Codex 마켓플레이스 목록
-├─ skills/                스킬 27개. 두 AI 가 같은 폴더를 읽습니다
+├─ skills/                스킬 28개. 두 AI 가 같은 폴더를 읽습니다
 │  └─ lion-pdf/
 │     ├─ SKILL.md         열리면 먼저 읽는 본문 (60줄 안팎)
 │     └─ references/      필요할 때만 읽는 참고 파일
